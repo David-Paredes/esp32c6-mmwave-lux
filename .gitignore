@@ -1,0 +1,30 @@
+# ESP-IDF build output
+build/
+sdkconfig.old
+
+# Component manager: fetched automatically from dependencies.lock, don't
+# commit the downloaded sources themselves (dependencies.lock IS committed).
+managed_components/
+
+# clangd index cache (regenerated locally, machine-specific)
+.cache/
+
+# clangd compile-flags override: hardcodes an absolute toolchain path
+# (/home/<user>/.espressif/...), not portable across machines.
+.clangd
+
+# Syncthing per-folder metadata
+.stfolder/
+.stversions/
+
+# Python (tools/)
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editor / OS cruft
+.vscode/
+.idea/
+*.swp
+.DS_Store
